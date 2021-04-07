@@ -1,0 +1,43 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+
+  /* align-items: start; */
+  /* align-items: center; */
+  /* align-items: end; */
+  /* align-items: stretch; */
+
+  /* justify-items: start; */
+  /* justify-items: center; */
+  /* justify-items: end; */
+  /* justify-items: stretch; */
+
+  /* place-items: center center;
+            place-items: start auto;            
+            place-items: end normal;
+            place-items: start auto;
+            place-items: end normal; */
+}
+
+.wrapper > div:nth-child(2) {
+  /* align-self: start; */
+  /* align-self: center; */
+  /* align-self: end; */
+  /* align-self: stretch; */
+
+  /* justify-self: start; */
+  /* justify-self: center; */
+  /* justify-self: end; */
+  /* justify-self: stretch; */
+
+  place-self: center center;
+}
+
+.wrapper div {
+  background-color: royalblue;
+}
+
+.wrapper div:nth-child(even) {
+  background-color: skyblue;
+}

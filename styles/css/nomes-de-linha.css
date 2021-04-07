@@ -1,0 +1,31 @@
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: [site-start] 1fr [content-start] repeat(4, 1fr) [site-end];
+    grid-template-rows: [site-top] 200px [content-top] 200px [content-bottom] 200px [site-bottom];
+    grid-gap: 0.5rem;
+  }
+}
+header,
+footer {
+  grid-column: site;
+}
+
+main {
+  grid-column: 1/5;
+}
+
+aside {
+  grid-column: 5/6;
+  grid-row: content-top/content-bottom;
+}
+
+.wrapper * {
+  background-color: royalblue;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.wrapper *:nth-child(even) {
+  background-color: skyblue;
+}
